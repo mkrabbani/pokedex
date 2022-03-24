@@ -36,7 +36,7 @@ export default function Navbar() {
                         <Link href="#contact"><a className="nav-link">Contact</a></Link>
                     </li>
                 </ul>
-                <Link href="https://github.com/mkrabbani">
+                <Link href="https://github.com/mkrabbani/pokedex">
                     <a target="__blank" className="btn btn-primary px-3 py-2 text-14 text-white br-7 text-decoration-none">
                      <img src="/img/github.png" className="me-1" width={'20px'} alt="Github" />   Github
                     </a>
