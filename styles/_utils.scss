@@ -1,0 +1,222 @@
+.ff-cabin {
+    font-family: 'Cabin', sans-serif;
+}
+
+.ff-asap {
+    font-family: 'Asap', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Asap', sans-serif;
+}
+
+p, ul {
+    font-family: 'Cabin', sans-serif;
+}
+
+.btn {
+    font-family: 'Asap', sans-serif;
+    border-radius: 8px;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-16 {
+    font-size: 16px; 
+
+    @include media-breakpoint-down(lg){
+        font-size: 14px;
+    }
+
+}
+
+.fs-18 {
+    font-size: 18px;
+
+    @include media-breakpoint-down(lg){
+        font-size: 16px;
+    }
+
+}
+
+.fs-24 {
+    font-size: 24px;
+
+    @include media-breakpoint-down(lg){
+        font-size: 18px;
+    }
+}
+
+.fs-36 {
+    font-size: 36px;
+
+    @include media-breakpoint-down(lg){
+        font-size: 24px;
+    }
+}
+
+.capitalize-first {
+    text-transform: lowercase;
+}
+
+.capitalize-first::first-letter {
+    text-transform: uppercase;
+}
+
+
+/* Cards*/
+
+.w-card {
+    width: 20%;
+
+    @include media-breakpoint-down(lg){
+        width: 33%;
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 70%;
+    }
+
+} 
+
+.portfolio-card{
+
+    position: relative;
+    text-align: center;
+    background-color: #CBD5E0;
+    border-radius: 10px;
+    height: 410px;
+    overflow: hidden;
+
+    @include media-breakpoint-down(lg){
+        height: 500px;
+    }
+
+    &::after {
+
+        content: ""; 
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #5350FF;
+        opacity: 0.1;
+        border-radius: 10px;
+
+    }
+
+    &--cat {
+
+        background-color: rgba($color: $black, $alpha: 0.7);
+        padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+        color: $white;
+        position: absolute;
+        bottom: 2.5%;
+        left: 4%;
+        // transform: translate(-5%, -5%);
+
+    }
+
+    .arrow-right {
+        position: absolute;
+        top: 2.5%;
+        right: 4%;
+        z-index: 999;
+    }
+
+    img {
+
+        overflow: hidden;
+        image-rendering: -moz-crisp-edges; /* Firefox */
+        image-rendering: -o-crisp-edges; /* Opera */
+        image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+
+    }
+
+}
+
+.bug {
+    background-color: #6AAEB1;
+}
+
+.grass {
+    background-color: #7CCB75;
+}
+
+.dragon {
+    background-color: #FF9B5B;
+}
+
+.fairy {
+    background-color: #DD789F;
+}
+
+.fighting {
+    background-color: #EE8488;
+}
+
+.water {
+    background-color: #4BC6F1;
+}
+
+.electric {
+    background-color: #EBD24C;
+}
+
+.rock {
+    background-color: #A0AEC0;
+}
+
+.fire {
+    background-color: #FF6363;
+}
+
+.ground {
+    background-color: #C3B091;
+}
+
+.dark {
+    background-color: #4A5568;
+}
+
+.poison {
+    background-color: #9F7AEA;
+}
+
+.psychic {
+    background-color: #97BFB4;
+}
+
+.ice {
+    background-color: #4299E1;
+}
+
+.normal {
+    background-color: #EBC27B;
+}
+
+.ghost {
+    background-color: #1A202C;
+}

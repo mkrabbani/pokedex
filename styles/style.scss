@@ -1,0 +1,29 @@
+@import "./custom";
+@import "./utils";
+@import "./landing-page";
+
+html {
+    scroll-behavior: smooth;
+}   
+  
+body {
+    background-color: $white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+  
+img {
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
+.to-top {
+    position: fixed;
+    top: 90vh;
+    right: 2vw;
+    cursor: pointer;
+}
